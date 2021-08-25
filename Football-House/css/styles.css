@@ -203,22 +203,6 @@ nav .show {
   grid-row: 4/5;
   border: 1px solid white;
 }
-.psg img {
-  height: 198px;
-  width: 303px;
-}
-.mahrez img {
-  height: 198px;
-  width: 303px;
-}
-.africa img {
-  height: 198px;
-  width: 303px;
-}
-.argentina img {
-  height: 198px;
-  width: 303px;
-}
 .des h3 {
   color: white;
 }
@@ -347,7 +331,7 @@ nav .show {
     transform: translate(-50%, -50%);
   }
   #form2 input {
-    padding: 10px 15px;
+    padding: 10px 10px;
     background-image: linear-gradient(to right, #62104a, #220b1b);
     border: none;
     font-weight: 900;
@@ -357,7 +341,7 @@ nav .show {
     display: inline-block;
   }
   #form2 button {
-    padding: 10px 15px;
+    padding: 10px 10px;
     border: none;
     text-decoration: none;
     cursor: pointer;
@@ -419,5 +403,17 @@ nav .show {
   }
   #humberger {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 451px) {
+  .thumbnail img {
+    height: 198px;
+    width: 303px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .thumbnail img {
+    height: 198px;
+    width: 100px;
   }
 }
