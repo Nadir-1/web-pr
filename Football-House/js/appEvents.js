@@ -10,18 +10,25 @@ window.onload = function refresh() {
   var now = new Date().getTime();
   const WC2022 = new Date("2022-11-21");
   remain = WC2022 - now;
-  var second = 1000;
-  var minute = second * 60;
-  var hour = minute * 60;
-  var day = hour * 24;
-  var d = Math.floor(remain / day);
-  var h = Math.floor((remain % day) / hour);
-  var m = Math.floor((remain % hour) / minute);
-  var s = Math.floor((remain % minute) / second);
-  da.textContent = d;
-  ho.textContent = h;
-  mi.textContent = m;
-  se.textContent = s;
+  if (remain <= 0) {
+    da.textContent = 0;
+    ho.textContent = 0;
+    mi.textContent = 0;
+    se.textContent = 0;
+  } else {
+    var second = 1000;
+    var minute = second * 60;
+    var hour = minute * 60;
+    var day = hour * 24;
+    var d = Math.floor(remain / day);
+    var h = Math.floor((remain % day) / hour);
+    var m = Math.floor((remain % hour) / minute);
+    var s = Math.floor((remain % minute) / second);
+    da.textContent = d;
+    ho.textContent = h;
+    mi.textContent = m;
+    se.textContent = s;
+  }
   setInterval(() => {
     refresh();
   }, 1000);
