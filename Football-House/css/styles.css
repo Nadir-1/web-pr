@@ -294,6 +294,10 @@ nav {
   }
 }
 @media screen and (max-width: 1135px) {
+  #Events {
+    height: 100%;
+    width: 100%;
+  }
   nav {
     position: fixed;
     z-index: 100;
@@ -420,5 +424,14 @@ nav {
   .thumbnail img {
     height: 198px;
     width: 100px;
+  }
+}
+@media screen and (max-height: 450px){
+  nav {
+    height: 20%; 
+  }
+ .items {
+    top: 20%;
+    height: 120%;
   }
 }
